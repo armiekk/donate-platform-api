@@ -1,0 +1,61 @@
+{
+  "name": "Post",
+  "plural": "posts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "generated": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "postType": {
+      "type": "number",
+      "default": 0
+    },
+    "donateTotal": {
+      "type": "number"
+    },
+    "donateTarget": {
+      "type": "number"
+    },
+    "createBy": {
+      "type": "string"
+    },
+    "createDate": {
+      "type": "date"
+    },
+    "updateDate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "donateLists": {
+      "type": "hasMany",
+      "model": "DonateList",
+      "foreignKey": ""
+    },
+    "banks": {
+      "type": "hasMany",
+      "model": "Bank",
+      "foreignKey": ""
+    },
+    "images": {
+      "type": "hasMany",
+      "model": "Image",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

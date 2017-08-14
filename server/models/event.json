@@ -1,0 +1,45 @@
+{
+  "name": "Event",
+  "plural": "Events",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "createDate": {
+      "type": "date"
+    },
+    "updateDate": {
+      "type": "date"
+    },
+    "createBy": {
+      "type": "string"
+    },
+    "viewTotal": {
+      "type": "number",
+      "default": 0
+    },
+    "shareTotal": {
+      "type": "number",
+      "default": 0
+    },
+    "donateTotal": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

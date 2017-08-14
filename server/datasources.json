@@ -1,0 +1,11 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "donate-platform-ds": {
+    "url": "http://admin:admin@localhost:28015/donate_platform_db",
+    "name": "donate-platform-ds",
+    "connector": "rethinkdb"
+  }
+}
